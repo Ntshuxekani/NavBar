@@ -1,18 +1,50 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+
 .topnav a {
-    float: center;
-    color: goldenrod;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
-   
-  }
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
   
-  
+  .nav-wrapper {
+    margin: auto;
+    text-align: left;
+    width: 70%;
+  } @media(max-width: 768px) {
+      .nav-wrapper {
+        width: 90%;
+      }
+    } @media(max-width: 638px) {
+        .nav-wrapper {
+          width: 100%;
+        }
+      } 
   
   /* Change the color of links on hover */
   .topnav a:hover {
-    background-color: rgb(221, 221, 221);
+    background-color: grey;
     color: black;
   }
   
@@ -26,7 +58,7 @@
       width: 200px;
       height: 100vh;
       position: fixed;
-      float: center;
+      float: left;
     color: goldenrod;
     text-align: center;
     padding: 14px 16px;
@@ -37,4 +69,8 @@
     background-color: rgb(221, 221, 221);
     color: black;
   }
+  .aligncenter{
+    text-align: center;
+  }
+ 
   
